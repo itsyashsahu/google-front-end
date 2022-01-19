@@ -5,9 +5,7 @@ import logo from "../assests/images/logo.png";
 import search from "../assests/images/search.png";
 import mic from "../assests/images/mic.png";
 import dots from "../assests/svg/dots.svg";
-import reactDom from "react-dom";
-// import { useState } from "react";
-// import Image from 'next/image'
+
 
 export default function Home() {
   const [hoverClass, setHoverClass] = useState("");
@@ -71,12 +69,10 @@ export default function Home() {
           <div className="buttons-wrapper">
             <div className="buttons-box">
               <div className="button-text-box">
-                {" "}
-                <a href="#">Google Search</a>{" "}
+                <a href="#">Google Search</a>
               </div>
               <div className="button-text-box">
-                {" "}
-                <a href="#">I'm Feeling Lucky</a>{" "}
+                <a href="#">I&apos;m Feeling Lucky</a>
               </div>
             </div>
           </div>
