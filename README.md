@@ -11,5 +11,7 @@ Screenshots
  
 ![First page](screenshots/Screenshot_1.png "Screenshot of first page")
 
+Mobile View
 
+![Mobile View](screenshots/Screenshot_2.png "Screenshot of Mobile View")
 
