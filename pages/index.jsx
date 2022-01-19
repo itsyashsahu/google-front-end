@@ -56,7 +56,7 @@ export default function Home() {
                 setFocus(true);
                 setHoverClass("search-hover");
               }}
-              onBlur={() => {
+              onBlur={() => { 
                 setFocus(false);
                 setHoverClass("");
               }}
