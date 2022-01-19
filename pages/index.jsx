@@ -25,7 +25,7 @@ export default function Home() {
           <li>Gmail</li>
           <li>Images</li>
           <li className="dots">
-            <Image src={dots} />
+            <Image src={dots} alt="menu-icon" />
           </li>
           <li className="profile">Y </li>
         </ul>
@@ -34,7 +34,7 @@ export default function Home() {
         <div className="content">
           <div className="logo-banner">
             <div className="logo">
-              <Image src={logo} />
+              <Image src={logo} alt="logo" />
             </div>
           </div>
           <div
@@ -49,7 +49,7 @@ export default function Home() {
             }}
           >
             <div className="search-icon">
-              <Image src={search} />
+              <Image src={search} alt="search-icon" />
             </div>
             <input
               type="text"
@@ -64,7 +64,7 @@ export default function Home() {
               }}
             />
             <div className="voice-icon">
-              <Image src={mic} />
+              <Image src={mic} alt="voice-icon" />
             </div>
           </div>
 
