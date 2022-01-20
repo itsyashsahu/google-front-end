@@ -17,6 +17,9 @@ export default function Home() {
 
   return (
     <div className="body-wrapper">
+      <Head>
+        <title>Google - itsyashsahu</title>
+      </Head>
       <header className="header">
         <ul>
           <li>
