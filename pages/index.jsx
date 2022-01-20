@@ -6,13 +6,12 @@ import search from "../assests/images/search.png";
 import mic from "../assests/images/mic.png";
 import dots from "../assests/svg/dots.svg";
 
-
 export default function Home() {
   const [hoverClass, setHoverClass] = useState("");
   const [focus, setFocus] = useState(false);
 
   // dont know why but i saw strange behaviour of onHover pseudo class
-  // the onhover was not getting triggered on the hover of search-box instead on the hover of 
+  // the onhover was not getting triggered on the hover of search-box instead on the hover of
   // each child of search-box div and the box-shadow was not not been applied to the search-box
   // instead to all the children elements sepeartly but WHy ????
 
@@ -20,12 +19,26 @@ export default function Home() {
     <div className="body-wrapper">
       <header className="header">
         <ul>
-          <li>Gmail</li>
-          <li>Images</li>
-          <li className="dots">
-            <Image src={dots} alt="menu-icon" />
+          <li>
+            <a href="#">Gmail</a>
           </li>
-          <li className="profile">Y </li>
+          <li>
+            <a href="#">Images</a>
+          </li>
+          <a className="menu-icon-a" href="#">
+            <div className="menu-box">
+              <li className="dots">
+                <Image src={dots} alt="menu-icon" />
+              </li>
+            </div>
+          </a>
+          <a className="profile-a" href="#">
+            <div>
+              <li className="profile">
+                {/* <a href="#"> */}Y{/* </a> */}
+              </li>
+            </div>
+          </a>
         </ul>
       </header>
       <div className="middle-banner">
@@ -47,7 +60,9 @@ export default function Home() {
             }}
           >
             <div className="search-icon">
-              <Image src={search} alt="search-icon" />
+              <a href="#">
+                <Image src={search} alt="search-icon" />
+              </a>
             </div>
             <input
               type="text"
@@ -56,24 +71,26 @@ export default function Home() {
                 setFocus(true);
                 setHoverClass("search-hover");
               }}
-              onBlur={() => { 
+              onBlur={() => {
                 setFocus(false);
                 setHoverClass("");
               }}
             />
             <div className="voice-icon">
-              <Image src={mic} alt="voice-icon" />
+              <a href="#">
+                <Image src={mic} alt="voice-icon" />
+              </a>
             </div>
           </div>
 
           <div className="buttons-wrapper">
             <div className="buttons-box">
-              <div className="button-text-box">
-                <a href="#">Google Search</a>
-              </div>
-              <div className="button-text-box">
-                <a href="#">I&apos;m Feeling Lucky</a>
-              </div>
+              <a href="#">
+                <div className="button-text-box">Google Search</div>
+              </a>
+              <a href="#">
+                <div className="button-text-box">I&apos;m Feeling Lucky</div>
+              </a>
             </div>
           </div>
         </div>
